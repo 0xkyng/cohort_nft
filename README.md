@@ -37,3 +37,5 @@ function _safeMint(string memory _tokenUri) external {
 
 
 ```
+
+The contract is verified on etherscan, see it [here](https://sepolia.etherscan.io/address/0x37f71e3E5244DD909658CeE5E3AA0516A66EC584#code)
