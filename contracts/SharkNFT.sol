@@ -8,14 +8,12 @@ import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract SharkNFT is ERC721URIStorage, Ownable {
     constructor() ERC721("SharkNFT", "SHN"){}
 
-    function mint(address _to, uint _tokenId, string calldata _uri) external onlyOwner {
-        _mint(_to, _tokenId);
-        _setTokenURI(_tokenId, _uri);
+    uint public _tokenId;
+     function _safeMint(string memory _tokenUri) external {
+        uint256 tokenId = _tokenId + 1;
+        _safeMint(msg.sender, tokenId);
+        _setTokenURI(tokenId, _tokenUri);
     }
-    // constructor(address _to, uint _tokenId, string memory _uri) ERC721("SharkNFT", "SHN") {
-    //     _mint(_to, _tokenId);
-    //     _setTokenURI(_tokenId, _uri);
-    // }
-
+    
 
 }
