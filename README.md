@@ -35,7 +35,7 @@ function _safeMint(string memory _tokenUri) external {
 ````
     Inside the function, it increments the _tokenId counter, mints a new NFT with the given _tokenUri to the sender's address, and associates the metadata URI with the newly minted NFT.
 
+The contract is verified on etherscan, see it [here](https://sepolia.etherscan.io/address/0x37f71e3E5244DD909658CeE5E3AA0516A66EC584#code)
 
 ```
 
-The contract is verified on etherscan, see it [here](https://sepolia.etherscan.io/address/0x37f71e3E5244DD909658CeE5E3AA0516A66EC584#code)
